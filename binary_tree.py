@@ -32,7 +32,7 @@ class Binary_Tree(object):
 	
 	def depth_first_search(root_node, function):
 		''' go deep or fall asleep B| '''
-		nodes_stack = []
+		nodes_stack = [root_node]
 		while len(nodes_stack) > 0 : 
 			print "we are at node" + str (nodes_stack[0].get_value())
 
@@ -51,7 +51,7 @@ class Binary_Tree(object):
 
 	def bredth_first_search(root_node, function):
 		'''search well or go to hell :3 '''
-		nodes_queue = []
+		nodes_queue = [root_node]
 		while len(nodes_queue) > 0:
 			print " we are at the node " + str(nodes_queue[0].get_value())
 			if function(nodes_queue[0]) : 
