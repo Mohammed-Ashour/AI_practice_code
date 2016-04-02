@@ -1,5 +1,7 @@
 class Binary_Tree(object):
-	"""my name is Binary_Tree , i have one head and two arms B| """
+	
+	
+	'''my name is Binary_Tree , i have one head and two arms B| '''
 	def __init__(self, node):
 		self.node = node
         self.leftBranch = None
@@ -43,14 +45,12 @@ def depth_first_search(root_node, function):
 			current_node = nodes_stack.pop()
 			if current_node.get_right_branch():
 				nodes_stack.insert(0, current_node.get_right_branch())
-
 			if current_node.get_left_branch():
 				nodes_stack.insert(0, current_node.get_left_branch())
 	print " we didn't find it , you should know that it  isn't my fault , but  it yours :/ "
 	return False
 
 def bredth_first_search(root_node, function):
-
 	'''search well or go to hell :3 '''
 	nodes_queue = [root_node]
 	while len(nodes_queue) > 0:
@@ -63,7 +63,6 @@ def bredth_first_search(root_node, function):
 
 			if current_node.get_right_branch():
 				nodes_queue.append(current_node.get_right_branch())
-
 			if current_node.get_left_branch():
 				nodes_queue.append(current_node.get_right_branch())
 	print " we didn't find it , you should know that it  isn't my fault , but  it yours :/ "
