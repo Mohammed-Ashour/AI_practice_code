@@ -1,6 +1,4 @@
 class Binary_Tree(object):
-	
-	
 	'''my name is Binary_Tree , i have one head and two arms B| '''
 	def __init__(self, node):
 		self.node = node
